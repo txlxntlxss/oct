@@ -1,0 +1,16 @@
+2  cd /ide/xterm || exit
+    3  exec /ide/xterm/bin/node /ide/xterm/index.cjs "$@"
+    4  echo "# oct" >> README.md
+    5  git init
+    6  git add README.md
+    7  git commit -m "first commit"
+    8  git branch -M main
+    9  git remote add origin https://github.com/txlxntlxss/oct.git
+   10  git push -u origin main
+   11  nano README.me
+   12  nano README.md
+   13  docker login ghcr.io
+   14  docker run nginx
+   15  docker ps
+   16  touch Dockerfile
+   17  touch docker-compose.yml
